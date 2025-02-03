@@ -1,0 +1,59 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    display: flex;
+    height: 100%;
+}
+
+#sidebar {
+    width: 300px;
+    background: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+#folder-structure {
+    margin-top: 10px;
+}
+
+#map {
+    flex-grow: 1;
+    height: 100vh; /* Ensure the map takes full height */
+}
+
+.folder, .file {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.folder:hover, .file:hover {
+    background: #ddd;
+}
+
+.collapsible {
+    margin-left: 10px;
+    display: none;
+}
+
+.collapsible.open {
+    display: block;
+}
+
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
